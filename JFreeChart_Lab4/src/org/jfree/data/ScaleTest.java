@@ -25,25 +25,25 @@ public class ScaleTest {
       
     }
     
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
 	public void testNull() {
 		Range actual = Range.scale(null,1.0);
 	}
     
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
 	public void testNegativeFactorNegativeRange() {
 		Range actual = Range.scale(negativeRange,-1);
 	}
     
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
    	public void testNegativeFactorPositiveRange() {
    		Range actual = Range.scale(positiveRange,-1);
    	}
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
    	public void testNegativeFactorZeroRange() {
    		Range actual = Range.scale(zeroRange,-1);
    	}
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
    	public void testNegativeFactorMixedRange() {
    		Range actual = Range.scale(mixedRange,-1);
    	}

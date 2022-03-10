@@ -113,7 +113,7 @@ public class CalculateColumnTotalTest {
         assertEquals("The sum of the table values column", 0, DataUtilities.calculateColumnTotal(values2, 2), .000000001d);
     }
     
-    @Test (expected = InvalidParameterException.class)
+    @Test (expected = IllegalArgumentException.class)
     public void testCalculateColumnTotalInvalidParemeter() {
         DataUtilities.calculateColumnTotal(null, 0);
     }
@@ -135,7 +135,7 @@ public class CalculateColumnTotalTest {
 
     @Test
     public void testCalculateColumnTotalNullRow() {
-        assertEquals("The sum of the table values row", 2.2, DataUtilities.calculateColumnTotal(values2, 2, valid3), .000000001d);
+        assertEquals("The sum of the table values row", 0, DataUtilities.calculateColumnTotal(values2, 2, valid3), .000000001d);
     }
 
     @After

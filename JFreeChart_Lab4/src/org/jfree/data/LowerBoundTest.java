@@ -5,7 +5,7 @@ import org.jfree.data.Range;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LowerBoundTests {
+public class LowerBoundTest {
 
 	 	private Range negativeRange;
 	    private Range positiveRange;

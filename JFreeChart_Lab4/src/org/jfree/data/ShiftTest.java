@@ -23,11 +23,11 @@ public class ShiftTest {
        
 		
     }
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
    	public void testNullNoCrossing() {
    		Range actual = Range.shift(null,1.0,false);
    	}
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testNullCrossing() {
    		Range actual = Range.shift(null,1.0,true);
    	}

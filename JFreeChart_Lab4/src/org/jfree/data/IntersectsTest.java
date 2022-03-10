@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class IntersectsTests {
+public class IntersectsTest {
     private Range positiveRange;
     private Range testRange;
     private double testValue1;

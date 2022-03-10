@@ -6,7 +6,7 @@ import org.jfree.data.Range;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LengthTests {
+public class LengthTest {
 	private Range negativeRange;
 	private Range positiveRange;
 	private Range zeroRange;

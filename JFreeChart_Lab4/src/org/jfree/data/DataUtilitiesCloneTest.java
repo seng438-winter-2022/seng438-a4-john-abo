@@ -32,25 +32,26 @@ public class DataUtilitiesCloneTest {
 		// 1 2
 		arr3[0][0] = 1;
 		arr3[0][1] = 2;
-		arr3[1] = null;
+		arr3[1][0] = 1;
+		arr3[1][1] = 2;
 	}
 	
 	@Test
 	public void testCloneSingleton() {
 		output = DataUtilities.clone(arr1);
-		assertTrue("Arrays should be equal", Arrays.equals(arr1, output));
+		assertEquals("Arrays should be equal", arr1, output);
 	}
 	
 	@Test
 	public void testCloneNonSingleton() {
 		output = DataUtilities.clone(arr2);
-		assertTrue("Arrays should be equal", Arrays.equals(arr2, output));
+		assertEquals("Arrays should be equal", arr2, output);
 	}
 	
 	@Test
 	public void testCloneNullColumn() {
 		output = DataUtilities.clone(arr3);
-		assertTrue("Arrays should be equal", Arrays.equals(arr3, output));
+		assertEquals("Arrays should be equal", arr3, output);
 	}
 	
 	@Test (expected = IllegalArgumentException.class)

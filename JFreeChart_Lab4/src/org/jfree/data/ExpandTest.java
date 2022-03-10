@@ -7,7 +7,7 @@ import java.security.InvalidParameterException;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ExpandTests {
+public class ExpandTest {
 
 	private Range negativeRange;
     private Range positiveRange;
@@ -24,7 +24,7 @@ public class ExpandTests {
        
 		
     }
-    @Test(expected = InvalidParameterException.class)
+    @Test(expected = IllegalArgumentException.class)
    	public void testNull() {
    		Range actual = Range.expand(null,0.5,0.5);
    	}

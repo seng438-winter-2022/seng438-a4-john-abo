@@ -9,7 +9,7 @@ import java.security.InvalidParameterException;
 
 public class CreateNumberArrayTest {
 	
-	@Test(expected = InvalidParameterException.class)
+	@Test(expected = IllegalArgumentException.class)
 	public void testNull() {
 		Number[] actual = DataUtilities.createNumberArray(null);
 	}

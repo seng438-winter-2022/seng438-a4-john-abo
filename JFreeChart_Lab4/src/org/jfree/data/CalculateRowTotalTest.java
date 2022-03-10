@@ -48,11 +48,11 @@ public class CalculateRowTotalTest {
                 one(values1).getValue(0,0);
                 will(returnValue(3.3));
                 one(values1).getValue(0,1);
-                will(returnValue(1.1));
+                will(returnValue(null));
                 one(values1).getValue(1,0);
-                will(returnValue(3.3));
+                will(returnValue(null));
                 one(values1).getValue(1,1);
-                will(returnValue(1.1));
+                will(returnValue(null));
             }
         });
 
@@ -104,8 +104,8 @@ public class CalculateRowTotalTest {
     }
 
     @Test
-    public void testCalculateRowTotalTableNonzeroPosition() {
-        assertEquals("The sum of the table values row", 0, DataUtilities.calculateRowTotal(values2, 1), .000000001d);
+    public void testCalculateRowTotalTableNonZeroPosition() {
+        assertEquals("The sum of the table values row", 4.4, DataUtilities.calculateRowTotal(values2, 1), .000000001d);
     }
 
     @Test
@@ -113,8 +113,8 @@ public class CalculateRowTotalTest {
         assertEquals("The sum of the table values column", 0, DataUtilities.calculateRowTotal(values2, 2), .000000001d);
     }
 
-    @Test (expected = InvalidParameterException.class)
-    public void testCalculateRowTotalInvalidParemeter() {
+    @Test (expected = IllegalArgumentException.class)
+    public void testCalculateRowTotalInvalidParameter() {
         DataUtilities.calculateRowTotal(null, 0);
     }
     
@@ -135,7 +135,7 @@ public class CalculateRowTotalTest {
 
     @Test
     public void testCalculateRowTotalNullRow() {
-        assertEquals("The sum of the table values row", 2.2, DataUtilities.calculateRowTotal(values2, 2, valid3), .000000001d);
+        assertEquals("The sum of the table values row", 0, DataUtilities.calculateRowTotal(values2, 2, valid3), .000000001d);
     }
 
 
