@@ -72,6 +72,7 @@ public class ShiftTest {
     }
     
     //makes sure zero crossing can occur if allowZeroCrossing flag is true
+    @Test
     public void testPositiveZeroCrossing() {
     	Range actual = Range.shift(negativeRange, 1.5,true);
     	 assertEquals("Lower bound of negative range after shifting by 1.5",1.1,actual.getLowerBound(),.000000001d);
@@ -119,11 +120,44 @@ public class ShiftTest {
     }
     
     //makes sure zero crossing can occur if allowZeroCrossing flag is true
+    @Test
     public void testNegativeRangeZeroCrossing() {
     	Range actual = Range.shift(negativeRange, -25,true);
-    	 assertEquals("Lower bound of positive range after shifting by -25",-16.99,actual.getLowerBound(),.000000001d);
-    	 assertEquals("Upper bound of positive range after shifting by -25",-0.89,actual.getUpperBound(),.000000001d);
+    	 assertEquals("Lower bound of positive range after shifting by -25",-25.4,actual.getLowerBound(),.000000001d);
+    	 assertEquals("Upper bound of positive range after shifting by -25",-25.1,actual.getUpperBound(),.000000001d);
     }
     
+    // I'll just add a test to cover the overloaded functions
+    
+    //these tests are for no zero crossing
+    @Test
+    public void testNegativeShiftNoCrossingNegativeRange() {
+    	
+    	 Range actual = Range.shift(negativeRange, -0.15);
+    	 assertEquals("Lower bound of negative range after shifting by -0.15",-0.55,actual.getLowerBound(),.000000001d);
+    	 assertEquals("Upper bound of negative range after shifting by -0.15",-0.25,actual.getUpperBound(),.000000001d);
+    }
+    @Test
+    public void testNegativeShiftNoCrossingPositiveRange() {
+    	 
+    	 Range actual = Range.shift(positiveRange, -1.5);
+    	 assertEquals("Lower bound of positive range after shifting by -1.5",6.51,actual.getLowerBound(),.000000001d);
+    	 assertEquals("Upper bound of positive range after shifting by -1.5",22.61,actual.getUpperBound(),.000000001d);
+    }
+    @Test
+    public void testNegativeShiftNoCrossingZeroRange() {
+    	 
+    	 Range actual = Range.shift(zeroRange, -1.5);
+    	 assertEquals("Lower bound of zero range after shifting by -1.5",-1.5,actual.getLowerBound(),.000000001d);
+    	 assertEquals("Upper bound of zero range after shifting by -1.5",-1.5,actual.getUpperBound(),.000000001d);
+    }
+    @Test
+    public void testNegativeShiftNoCrossingMixedRange() {
+    	 
+    	 Range actual = Range.shift(mixedRange, -1.5);
+    	 assertEquals("Lower bound of mixed range after shifting by -1.5",-2.5,actual.getLowerBound(),.000000001d);
+    	 assertEquals("Upper bound of mixed range after shifting by -1.5",0.5,actual.getUpperBound(),.000000001d);
+    
+    }  
    
 }
