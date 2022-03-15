@@ -173,6 +173,11 @@ public class GetCumulativePercentagesTest {
         }
         assertEquals(-16.0, total, 0.00001d);
     }
+    
+    @Test (expected = IllegalArgumentException.class)
+    public void testCalculateRowTotalInvalidParameter() {
+    	DataUtilities.getCumulativePercentages(null);
+    }
 
     @Test
     public void getValuesWithKey(){
