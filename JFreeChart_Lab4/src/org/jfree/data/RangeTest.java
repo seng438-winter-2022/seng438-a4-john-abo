@@ -14,15 +14,26 @@ public class RangeTest{
 
     @Before
     public void setUp() throws Exception{
-        upper= 1.0;
-        lower =10.0;
+        upper = 1.0;
+        lower = 10.0;
     }
 
     @Test(expected = Exception.class)
-    public void correctConstructorRangeTest(){
-        // Range expected = new Range (-10.0,10.0);
+    public void incorrectConstructorRangeTest(){
         testRange = new Range(lower, upper);
 
+    }
+    
+    @Test
+    public void correctConstructorLowerRangeTest(){
+        testRange = new Range(upper , lower);
+        assertEquals("Lower is wrong", 1.0, testRange.getLowerBound(), 0.0000001d);
+    }
+    
+    @Test
+    public void correctConstructorUpperRangeTest(){
+        testRange = new Range(upper , lower);
+        assertEquals("Lower is wrong", 10.0, testRange.getUpperBound(), 0.0000001d);
     }
             
     @After
