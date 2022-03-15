@@ -13,6 +13,7 @@ public class CalculateColumnTotalTest {
 
 	Mockery mockContext1;
     Mockery mockContext2;
+    Mockery mockContext3;
     
     int[] valid0 = null;
     int[] valid1 = new int[1];
@@ -21,6 +22,7 @@ public class CalculateColumnTotalTest {
     
     Values2D values1;
     Values2D values2;
+    Values2D values3;
 
     @Before
     public void setUp() throws Exception {
@@ -30,6 +32,8 @@ public class CalculateColumnTotalTest {
     	valid2[1] = 2;	// a column that's out of bounds
     	valid3[0] = 3;
     	valid3[1] = 1;
+    	
+    	
 
         // Mockery of 1 x 1 table
         mockContext1 = new Mockery();
@@ -91,6 +95,34 @@ public class CalculateColumnTotalTest {
                 will(returnValue(null));
             }
         });
+        
+        // Mockery of 2 x 2 table with no Nulls
+        mockContext3 = new Mockery();
+        values3 = mockContext3.mock(Values2D.class);
+        mockContext3.checking(new Expectations() {
+            {
+                one(values3).getRowCount();
+                will(returnValue(2));
+                one(values3).getColumnCount();
+                will(returnValue(2));
+
+                // Mocks table with values
+                // 1.1  1.1  
+                // 2.2  2.2  
+
+                // Last row and column are not valid and out of range
+                one(values3).getValue(0,0);
+                will(returnValue(1.1));
+                one(values3).getValue(0,1);
+                will(returnValue(1.1));
+                one(values3).getValue(1,0);
+                will(returnValue(2.2));
+                one(values3).getValue(1,1);
+                will(returnValue(2.2));
+            }
+        });
+        
+        
     }
 
     @Test
@@ -106,6 +138,11 @@ public class CalculateColumnTotalTest {
     @Test
     public void testCalculateColumnTotalNonzeroPosition() {
         assertEquals("The sum of the table values column", 3.3, DataUtilities.calculateColumnTotal(values2, 1), .000000001d);
+    }
+    
+    @Test
+    public void testCalculateColumnTotalNonzeroPositionNoNull() {
+        assertEquals("The sum of the table values column", 3.3, DataUtilities.calculateColumnTotal(values3, 1), .000000001d);
     }
 
     @Test
@@ -131,6 +168,11 @@ public class CalculateColumnTotalTest {
     @Test
     public void testCalculateColumnTotalValidRow() {
         assertEquals("The sum of the table values row", 1.1, DataUtilities.calculateColumnTotal(values2, 1, valid1), .000000001d);
+    }
+    
+    @Test
+    public void testCalculateColumnTotalValidRowNoNull() {
+        assertEquals("The sum of the table values row", 1.1, DataUtilities.calculateColumnTotal(values3, 1, valid1), .000000001d);
     }
 
     @Test

@@ -13,6 +13,7 @@ public class CalculateRowTotalTest {
 
     Mockery mockContext1;
     Mockery mockContext2;
+    Mockery mockContext3;
     
     int[] valid0 = null;
     int[] valid1 = new int[1];
@@ -21,6 +22,7 @@ public class CalculateRowTotalTest {
     
     Values2D values1;
     Values2D values2;
+    Values2D values3;
 
     @Before
     public void setUp() throws Exception {
@@ -91,6 +93,33 @@ public class CalculateRowTotalTest {
                 will(returnValue(null));
             }
         });
+        
+        // Mockery of 2 x 2 table no nulls
+        mockContext3 = new Mockery();
+        values3 = mockContext3.mock(Values2D.class);
+        mockContext3.checking(new Expectations() {
+            {
+                one(values3).getRowCount();
+                will(returnValue(2));
+                one(values3).getColumnCount();
+                will(returnValue(2));
+
+                // Mocks table with values
+                // 1.1  1.1  null
+                // 2.2  2.2  null
+                // null null null
+                // Last row and column are not valid and out of range
+                one(values3).getValue(0,0);
+                will(returnValue(1.1));
+                one(values3).getValue(0,1);
+                will(returnValue(1.1));
+                one(values3).getValue(1,0);
+                will(returnValue(2.2));
+                one(values3).getValue(1,1);
+                will(returnValue(2.2));
+
+            }
+        });
     }
 
     @Test
@@ -106,6 +135,11 @@ public class CalculateRowTotalTest {
     @Test
     public void testCalculateRowTotalTableNonZeroPosition() {
         assertEquals("The sum of the table values row", 4.4, DataUtilities.calculateRowTotal(values2, 1), .000000001d);
+    }
+    
+    @Test
+    public void testCalculateRowTotalTableNonZeroPositionNoNull() {
+        assertEquals("The sum of the table values row", 4.4, DataUtilities.calculateRowTotal(values3, 1), .000000001d);
     }
 
     @Test
@@ -131,6 +165,11 @@ public class CalculateRowTotalTest {
     @Test
     public void testCalculateRowTotalValidRow() {
         assertEquals("The sum of the table values row", 2.2, DataUtilities.calculateRowTotal(values2, 1, valid1), .000000001d);
+    }
+    
+    @Test
+    public void testCalculateRowTotalValidRowNoNull() {
+        assertEquals("The sum of the table values row", 2.2, DataUtilities.calculateRowTotal(values3, 1, valid1), .000000001d);
     }
 
     @Test
