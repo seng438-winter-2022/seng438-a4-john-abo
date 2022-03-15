@@ -154,7 +154,10 @@ public class CalculateColumnTotalTest {
     public void testCalculateColumnTotalInvalidParemeter() {
         DataUtilities.calculateColumnTotal(null, 0);
     }
-    
+    @Test (expected = IllegalArgumentException.class)
+    public void testCalculateColumnTotalInvalidParemeterOverload() {
+        DataUtilities.calculateColumnTotal(null, 0,valid1);
+    }
     @Test
     public void testCalculateColumnTotalValidSingleton() {
     	assertEquals("The sum of the valid singleton values row", 3.3, DataUtilities.calculateColumnTotal(values1, 0, valid1), .000000001d);
