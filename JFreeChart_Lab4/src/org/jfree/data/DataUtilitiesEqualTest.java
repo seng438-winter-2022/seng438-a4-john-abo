@@ -48,6 +48,7 @@ public class DataUtilitiesEqualTest {
 		arr5[0][0] = 1;
 		arr5[1][0] = 2;
 	}
+	
 	@Test
 	public void differentLengthButSimilar() {
 		assertEquals("Two arrays of different size but similar",false,DataUtilities.equal(arr4,arr5));
