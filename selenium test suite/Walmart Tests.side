@@ -1,8 +1,8 @@
 {
   "id": "f7c1c70d-c1a7-4e88-80f9-560af27d04b6",
   "version": "2.0",
-  "name": "Walmart Tests",
-  "url": "https://www.walmart.ca/en/ip/apple-gala/6000195494284",
+  "name": "Walmart Tests ",
+  "url": "https://www.walmart.ca/store-selector?returnToReferrer=true",
   "tests": [{
     "id": "d95b633b-42d8-49ec-b4c2-1ffb0cb0a664",
     "name": "Buy apple",
@@ -79,6 +79,84 @@
       ],
       "value": "$0.79"
     }]
+  }, {
+    "id": "b25e1e5c-51ce-429c-8585-a2927bf3863c",
+    "name": "Find location",
+    "commands": [{
+      "id": "9b7dbb0c-ccd1-4258-b9f0-a0ebe15b6954",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/store-selector?returnToReferrer=true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39508290-a796-4510-8213-b8cfc4567f20",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "917x861",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6d1f5f6-4b81-4953-bed3-3f9e07d69ea6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-ojzmge",
+      "targets": [
+        ["css=.css-ojzmge", "css:finder"],
+        ["xpath=//input[@value='L5V2N6']", "xpath:attributes"],
+        ["xpath=//div[@id='pickup-tab-panel']/div/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12c0d18f-3ef9-422f-9cd9-73eb97349db8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-ojzmge",
+      "targets": [
+        ["css=.css-ojzmge", "css:finder"],
+        ["xpath=//input[@value='L5V2N6']", "xpath:attributes"],
+        ["xpath=//div[@id='pickup-tab-panel']/div/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db2f0309-f228-4e13-8a20-584dfa440896",
+      "comment": "",
+      "command": "type",
+      "target": "css=.css-ojzmge",
+      "targets": [
+        ["css=.css-ojzmge", "css:finder"],
+        ["xpath=//input[@value='T2L 2K1']", "xpath:attributes"],
+        ["xpath=//div[@id='pickup-tab-panel']/div/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "T2L 2K1"
+    }, {
+      "id": "1f6a314f-d161-483a-8e69-cea4cca05f34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-dotusp",
+      "targets": [
+        ["css=.css-dotusp", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='pickup-tab-panel']/div/section/form/div/button", "xpath:idRelative"],
+        ["xpath=//section/form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b668e5e7-16a5-47ea-b8fa-c53ec2030d60",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#store-selector-store-3011 h2",
+      "targets": [
+        ["css=#store-selector-store-3011 h2", "css:finder"],
+        ["xpath=//li[@id='store-selector-store-3011']/section/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Northland Store')]", "xpath:innerText"]
+      ],
+      "value": "Northland Store"
+    }]
   }],
   "suites": [{
     "id": "3e531c66-795a-414d-beba-facac9bd4ab5",
@@ -88,6 +166,6 @@
     "timeout": 300,
     "tests": []
   }],
-  "urls": ["https://www.walmart.ca/en", "https://www.walmart.ca/en/ip/apple-gala/6000195494284"],
+  "urls": ["https://www.walmart.ca/en", "https://www.walmart.ca/en/ip/apple-gala/6000195494284", "https://www.walmart.ca/store-selector?returnToReferrer=true"],
   "plugins": []
 }
