@@ -7,55 +7,6 @@
     "id": "38be95b7-a8c2-4dd1-904b-207a95f6336a",
     "name": "invalid login",
     "commands": [{
-      "id": "96a6bd9f-6949-4cf5-bb28-a1b3ad7b9584",
-      "comment": "",
-      "command": "click",
-      "target": "css=html",
-      "targets": [
-        ["css=html", "css:finder"],
-        ["xpath=//html", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1213cff6-3584-44a6-ba7e-68601efe1c0d",
-      "comment": "",
-      "command": "click",
-      "target": "css=.active .css-1pnqytp > span:nth-child(1)",
-      "targets": [
-        ["css=.active .css-1pnqytp > span:nth-child(1)", "css:finder"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "02beec64-29d1-4636-9a80-7ae5dbf39c4d",
-      "comment": "",
-      "command": "click",
-      "target": "css=.css-1d38efn",
-      "targets": [
-        ["css=.css-1d38efn", "css:finder"],
-        ["xpath=//div[@id='browse-search-page']/div/div/div/div/div[7]/div/div", "xpath:idRelative"],
-        ["xpath=//div[7]/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "6b40a13d-aac5-4cba-a939-eaece2cc6a0a",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.css-n3lrna",
-      "targets": [
-        ["css=.css-n3lrna", "css:finder"],
-        ["xpath=//div[@id='browse-search-page']/div/div/div/div/div[7]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[7]/div/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "af597094-b2c7-4699-af48-771f8e246aaf",
-      "comment": "",
-      "command": "assertTitle",
-      "target": "playstation 5 console | Walmart Canada",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "6a3a8af3-1dd7-405d-acab-035551fd45ec",
       "comment": "",
       "command": "open",
@@ -291,86 +242,6 @@
       "value": "walmart732322222@gmail.com"
     }]
   }, {
-    "id": "d43bb11b-ab4b-42de-b13b-4c449bca2568",
-    "name": "playstation search",
-    "commands": [{
-      "id": "4e53f583-5f0e-4000-a63a-160c62e2ea44",
-      "comment": "",
-      "command": "open",
-      "target": "https://www.walmart.ca/en",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e906920b-0747-4a01-8366-fdd8a8efa4d8",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1536x816",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "772da1d5-43c5-44d6-b5d2-3e2933e2771d",
-      "comment": "",
-      "command": "click",
-      "target": "id=search-form-input",
-      "targets": [
-        ["id=search-form-input", "id"],
-        ["css=#search-form-input", "css:finder"],
-        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "8de5710a-865d-4e35-9789-89fbc2ece9db",
-      "comment": "",
-      "command": "type",
-      "target": "id=search-form-input",
-      "targets": [
-        ["id=search-form-input", "id"],
-        ["css=#search-form-input", "css:finder"],
-        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "playstation 5 console"
-    }, {
-      "id": "4ebdd32e-1ef0-42c7-b0d7-6484783ba7d1",
-      "comment": "",
-      "command": "click",
-      "target": "css=.css-1lxthnz",
-      "targets": [
-        ["css=.css-1lxthnz", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "3e9dd91d-e11c-4333-b690-b58ee0eb8f86",
-      "comment": "",
-      "command": "click",
-      "target": "css=.css-1d38efn",
-      "targets": [
-        ["css=.css-1d38efn", "css:finder"],
-        ["xpath=//div[@id='browse-search-page']/div/div/div/div/div[7]/div/div", "xpath:idRelative"],
-        ["xpath=//div[7]/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "5f1fe3bf-8e3f-493b-8295-71f7d3548340",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.css-n3lrna",
-      "targets": [
-        ["css=.css-n3lrna", "css:finder"],
-        ["xpath=//div[@id='browse-search-page']/div/div/div/div/div[7]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[7]/div/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "e093b11e-4a9c-4fe2-9412-03afb5694364",
-      "comment": "",
-      "command": "assertTitle",
-      "target": "playstation 5 console | Walmart Canada",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "a8dbb60d-a2ae-4415-a1b7-834636312d53",
     "name": "milk test",
     "commands": [{
@@ -426,6 +297,112 @@
       "comment": "",
       "command": "assertTitle",
       "target": "milk | Walmart Canada",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "feccbe1d-5d94-4461-a8ad-ec3f4bff28d1",
+    "name": "playstation search",
+    "commands": [{
+      "id": "24f31d07-6909-4137-89c2-dd68e5f533e0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "842e251f-a421-42e1-8374-95e448132587",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5155a6cf-abd3-46f3-9bbe-9e3696681f8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-form-input",
+      "targets": [
+        ["id=search-form-input", "id"],
+        ["css=#search-form-input", "css:finder"],
+        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afbd5b19-1af7-425a-8c86-94a00aeb4ebe",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-form-input",
+      "targets": [
+        ["id=search-form-input", "id"],
+        ["css=#search-form-input", "css:finder"],
+        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "140580c5-2491-4729-88e0-c379b0ad1801",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-form-input",
+      "targets": [
+        ["id=search-form-input", "id"],
+        ["css=#search-form-input", "css:finder"],
+        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "playstation 5 console"
+    }, {
+      "id": "7a27b8ee-88e4-404c-a6bc-746d93820cdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .css-10iahqc",
+      "targets": [
+        ["css=.active .css-10iahqc", "css:finder"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2032a0cc-1fbf-434c-8d34-ba1854e3ea97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1msh118",
+      "targets": [
+        ["css=.css-1msh118", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcc5bf05-929c-4065-9c21-2d6505df8069",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.css-1fno8zx:nth-child(2)",
+      "targets": [
+        ["css=.css-1fno8zx:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='skip-to-main']/nav/ol/li[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Search: playstation 5 console')]", "xpath:innerText"]
+      ],
+      "value": "Search: playstation 5 console"
+    }, {
+      "id": "2d1a69cf-9dba-430f-a9f8-1674db73d3e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=skip-to-main",
+      "targets": [
+        ["id=skip-to-main", "id"],
+        ["css=#skip-to-main", "css:finder"],
+        ["xpath=//div[@id='skip-to-main']", "xpath:attributes"],
+        ["xpath=//div[@id='browse-search-page']/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ceea3e7-8c7c-4460-aae2-8da73d34e2b5",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "playstation 5 console | Walmart Canada",
       "targets": [],
       "value": ""
     }]
