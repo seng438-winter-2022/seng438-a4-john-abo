@@ -12,6 +12,7 @@ public class DataUtilitiesCloneTest {
 	double[][] arr1 = new double[1][1];
 	double[][] arr2 = new double[2][2];
 	double[][] arr3 = new double[2][2];
+	double[][] arr4 = new double[2][1];
 	
 	@Before
 	public void setUp() throws Exception {
@@ -34,6 +35,9 @@ public class DataUtilitiesCloneTest {
 		arr3[0][1] = 2;
 		arr3[1][0] = 1;
 		arr3[1][1] = 2;
+		arr4[0][0] = 9;
+		arr4[1] = null;
+		
 	}
 	
 	@Test
@@ -41,6 +45,14 @@ public class DataUtilitiesCloneTest {
 		output = DataUtilities.clone(arr1);
 		assertEquals("Arrays should be equal", arr1, output);
 	}
+	
+	@Test
+	public void testCloneNull() {
+		output = DataUtilities.clone(arr4);
+		assertEquals("Arrays should be equal", arr4, output);
+	}
+	
+	
 	
 	@Test
 	public void testCloneNonSingleton() {

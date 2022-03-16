@@ -1,6 +1,7 @@
 package org.jfree.data;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.*;
 
@@ -14,6 +15,8 @@ public class DataUtilitiesEqualTest {
 	double[][] arr2_clone = new double[2][2];
 	double[][] arr3 = new double[1][1];
 	double[][] arr3_clone = new double[1][1];
+	double [][] arr4 = new double[1][1];
+	double [][] arr5 = new double [2][1];
 	
 	@Before
 	public void setUp() throws Exception {
@@ -40,7 +43,17 @@ public class DataUtilitiesEqualTest {
 		arr2_clone[0][1] = 2;
 		arr2_clone[1][0] = 1;
 		arr2_clone[1][1] = 2;
+		
+		arr4[0][0] = 1;
+		arr5[0][0] = 1;
+		arr5[1][0] = 2;
 	}
+	
+	@Test
+	public void differentLengthButSimilar() {
+		assertEquals("Two arrays of different size but similar",false,DataUtilities.equal(arr4,arr5));
+	}
+	
 	
 	@Test
 	public void testEqualsBothNull() {

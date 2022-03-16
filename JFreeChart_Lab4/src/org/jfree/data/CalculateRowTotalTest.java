@@ -152,6 +152,11 @@ public class CalculateRowTotalTest {
         DataUtilities.calculateRowTotal(null, 0);
     }
     
+    @Test (expected = IllegalArgumentException.class)
+    public void testCalculateRowTotalInvalidParameterOverload() {
+        DataUtilities.calculateRowTotal(null, 0,valid1);
+    }
+    
     @Test
     public void testCalculateRowTotalValidSingleton() {
     	assertEquals("The sum of the valid singleton values row", 3.3, DataUtilities.calculateRowTotal(values1, 0, valid1), .000000001d);

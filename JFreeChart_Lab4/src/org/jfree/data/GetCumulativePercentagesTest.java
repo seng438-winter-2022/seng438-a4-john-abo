@@ -13,8 +13,10 @@ import org.junit.*;
 public class GetCumulativePercentagesTest {
     Mockery mock1;
     Mockery mock2;
+    Mockery mock3;
     KeyedValues positiveValues;
     KeyedValues negativeValues;
+    KeyedValues hasNull;
 
 
 
@@ -91,11 +93,47 @@ public class GetCumulativePercentagesTest {
                 will(returnValue(3));
             }
         });
+        
+        Mockery mockingContext3 = new Mockery();
+        hasNull = mockingContext3.mock(KeyedValues.class);
+        mockingContext3.checking(new Expectations() {
+            { 
+                one(hasNull).getIndex(0);
+                will(returnValue(0));
+                one(hasNull).getIndex(1);
+                will(returnValue(1));
+                one(hasNull).getIndex(2);
+                will(returnValue(2)); 
+                
+                one(hasNull).getKey(0);
+                will(returnValue(0));
+                one(hasNull).getKey(1);
+                will(returnValue(1));
+                one(hasNull).getKey(2);
+                will(returnValue(2));
+                
+                atLeast(1).of(hasNull).getValue(0);
+                will(returnValue(null));
+                atLeast(1).of(hasNull).getValue(1);
+                will(returnValue(-7));
+                atLeast(1).of(hasNull).getValue(2);
+                will(returnValue(-292f));
+                
+                atLeast(1).of(hasNull).getItemCount();
+                will(returnValue(3));
+            }
+        });
 
     }
 
 
-
+    @Test
+    public void testNullArray() {
+    	KeyedValues result = DataUtilities.getCumulativePercentages(hasNull);
+    	   double [] actual = { result.getValue(1).doubleValue(), result.getValue(2).doubleValue()};
+    	  double [] expected = { -7.0/-299.0, -299.0/-299.0};
+    	  assertArrayEquals(expected, actual, 0.00001d);
+    }
     @Test
     public void positiveGetItemCountTest(){
         
@@ -134,6 +172,11 @@ public class GetCumulativePercentagesTest {
             }
         }
         assertEquals(-16.0, total, 0.00001d);
+    }
+    
+    @Test (expected = IllegalArgumentException.class)
+    public void testCalculateRowTotalInvalidParameter() {
+    	DataUtilities.getCumulativePercentages(null);
     }
 
     @Test
