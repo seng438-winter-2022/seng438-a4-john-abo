@@ -1,0 +1,93 @@
+{
+  "id": "f7c1c70d-c1a7-4e88-80f9-560af27d04b6",
+  "version": "2.0",
+  "name": "Walmart Tests",
+  "url": "https://www.walmart.ca/en/ip/apple-gala/6000195494284",
+  "tests": [{
+    "id": "d95b633b-42d8-49ec-b4c2-1ffb0cb0a664",
+    "name": "Buy apple",
+    "commands": [{
+      "id": "5a5dc81d-f428-4b3c-806e-c197b71b0593",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en/ip/apple-gala/6000195494284",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8662d84-42e5-406d-aa15-ec7bd365acdc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "917x857",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a5180a3-31b5-494f-95d9-5f053e1bb363",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0284866c-8447-478d-8cd6-7415a94a6a02",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a202c0e2-5b07-4a52-b37e-f605f9150f64",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69f81841-fb7b-462e-9be2-7600eb22a2b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(4) > .css-dldxm2",
+      "targets": [
+        ["css=div:nth-child(4) > .css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='atc-root']/div[3]/div[2]/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01a38121-6e8a-42b8-bce7-83fe99c8b65a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.eeazboz0:nth-child(3) > div:nth-child(2)",
+      "targets": [
+        ["css=.eeazboz0:nth-child(3) > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[4]/div[3]/div/div/div[3]/div[2]", "xpath:position"]
+      ],
+      "value": "$0.79"
+    }]
+  }],
+  "suites": [{
+    "id": "3e531c66-795a-414d-beba-facac9bd4ab5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.walmart.ca/en", "https://www.walmart.ca/en/ip/apple-gala/6000195494284"],
+  "plugins": []
+}
