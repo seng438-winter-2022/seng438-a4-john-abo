@@ -5,7 +5,7 @@
   "url": "https://www.walmart.ca/en/ip/apple-gala/6000195494284",
   "tests": [{
     "id": "d95b633b-42d8-49ec-b4c2-1ffb0cb0a664",
-    "name": "Switch department",
+    "name": "Buy apple",
     "commands": [{
       "id": "5a5dc81d-f428-4b3c-806e-c197b71b0593",
       "comment": "",
