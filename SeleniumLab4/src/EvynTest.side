@@ -1,0 +1,449 @@
+{
+  "id": "37fa1b39-3be3-4be1-a99e-2cc752c5fb54",
+  "version": "2.0",
+  "name": "EvynTest",
+  "url": "https://www.walmart.ca/en",
+  "tests": [{
+    "id": "32f11b45-6c2c-4d71-b399-19bc5e49d0e3",
+    "name": "sign out",
+    "commands": [{
+      "id": "ddbf0192-e9de-40f6-8f71-04007c24982b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "296888e6-6d55-4bec-9cfa-578dea2a3f62",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1023x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24982226-c868-4acd-b1c6-569d28159e96",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(1) > span:nth-child(1)",
+      "targets": [
+        ["css=span:nth-child(1) > span:nth-child(1)", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f39a83d8-122f-403d-9d04-d4524b56de41",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc3cbeb-f776-4fa9-835c-435576ac7861",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "walmart732322222@gmail.com"
+    }, {
+      "id": "f80527ab-cc11-46ec-90cc-e3780322106c",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aee9696-2a19-4290-903e-6f2fe0755a41",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "seng438assignment4"
+    }, {
+      "id": "b8b0eaa5-ded8-4a9a-b810-6ca4838541dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-vfxkzw",
+      "targets": [
+        ["css=.css-vfxkzw", "css:finder"],
+        ["xpath=//form[@id='login-form']/div/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e74ddf5a-afe9-4045-b681-3dff8393799b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-hl2cc3",
+      "targets": [
+        ["css=.css-hl2cc3", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e53a0f70-23fb-49fa-87fd-25634562aec6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-2hpngt",
+      "targets": [
+        ["css=.css-2hpngt", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign out')])[2]", "xpath:link"],
+        ["xpath=//div[@id='accounts-home-page']/div[2]/div/div/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.walmart.ca/ws/secure/en/sign-out')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "515663cb-1738-43a9-a5bd-9cbf00f1643c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1xh2uh0 > span > span",
+      "targets": [
+        ["css=.css-1xh2uh0 > span > span", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef75dea1-1e02-44dd-877c-cdd07335f4a6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "547f4709-7f4a-43e5-8db8-5630cb804754",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "80db328d-1a1b-4be5-822f-bc2d70af2fd7",
+    "name": "removing item from cart",
+    "commands": [{
+      "id": "bfe63343-06a9-407c-a6d4-18731442a07d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7936bc7f-15a5-477c-ad93-224c2c9e8c8b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1022x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d741d51b-4e54-497c-beb5-c3747f74e9db",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-form-input",
+      "targets": [
+        ["id=search-form-input", "id"],
+        ["css=#search-form-input", "css:finder"],
+        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5e29a3a-035b-4d8a-88da-4bcd7c62bf04",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-form-input",
+      "targets": [
+        ["id=search-form-input", "id"],
+        ["css=#search-form-input", "css:finder"],
+        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "cheese"
+    }, {
+      "id": "3dc63552-348b-4fdc-9e7f-e71609a5d7bc",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.css-1lxthnz",
+      "targets": [
+        ["css=.css-1lxthnz", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "349d33a2-ae53-491f-8f1a-4763d610a94c",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.css-1lxthnz > use",
+      "targets": [
+        ["css=.css-1lxthnz > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce43a2d7-b7c8-4634-931b-f0a15dcd88dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1lxthnz",
+      "targets": [
+        ["css=.css-1lxthnz", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d377eabb-6d93-4e0a-a3fc-2220d02de899",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-j3pdw2 > svg",
+      "targets": [
+        ["css=.css-j3pdw2 > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c549f08d-1c03-4d6c-9065-4f0d8134c32d",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .css-1fnwt3w .css-gxbcya",
+      "targets": [
+        ["css=div:nth-child(1) > .css-1fnwt3w .css-gxbcya", "css:finder"],
+        ["xpath=//img[@alt='Great Value Marble Cheddar Cheese']", "xpath:img"],
+        ["xpath=//div[@id='product-results']/div/div/a/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09ba2d75-fe64-4f52-9881-a1b3160d976d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,76)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea116bc7-59d0-40d4-a8aa-d0eab423e632",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "395ff163-fdb6-43a1-8bee-e9f96b977e31",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a57c9baf-b20f-4dba-a139-aacdeba4bacf",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad48a39b-7e76-413d-9156-37ebbf284255",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(4) > .css-dldxm2",
+      "targets": [
+        ["css=div:nth-child(4) > .css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='atc-root']/div[3]/div[2]/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bcf2f70-08ea-4f6d-80b7-96f25252b4ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1g3suh5",
+      "targets": [
+        ["css=.css-1g3suh5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3c26e21-c1f8-49f9-87df-f9e969ee196c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-19irnyl",
+      "targets": [
+        ["css=.css-19irnyl", "css:finder"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a5f7045-1336-4c67-a46a-7670f2592171",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-avlszb > span",
+      "targets": [
+        ["css=.css-avlszb > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your shopping cart is currently empty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a0b47e5-f6f4-4582-bbc3-8202e5f2a86c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-avlszb > span",
+      "targets": [
+        ["css=.css-avlszb > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your shopping cart is currently empty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1caba6f-3c82-40bc-be24-507f22159157",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.css-avlszb > span",
+      "targets": [
+        ["css=.css-avlszb > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your shopping cart is currently empty')]", "xpath:innerText"]
+      ],
+      "value": "Your shopping cart is currently empty"
+    }, {
+      "id": "b024ede5-a6ac-4036-b3ab-d5d5ea0d8fb4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "916da4d5-1200-44c2-9e23-fa445835f01f",
+    "name": "removing item from empty cart",
+    "commands": [{
+      "id": "b96e1540-d12a-459d-b9c8-8a39668d40a1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "936b7f79-3a31-4b9c-bcf0-6f7cce2f5231",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1022x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b326bcf-0320-4e47-8f31-03cd465668b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-nk32ej use",
+      "targets": [
+        ["css=.css-nk32ej use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d2cca8f-92d9-4d45-80d7-3ae4a9a0165b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-nk32ej use",
+      "targets": [
+        ["css=.css-nk32ej use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6284a631-09d1-4624-998a-cec02a9a3222",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-kx500q:nth-child(2)",
+      "targets": [
+        ["css=.css-kx500q:nth-child(2)", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01b90134-1007-4dd2-a708-8b0f6f449a02",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,8)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c354728-c128-430f-b269-eb7347ddacdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-avlszb > span",
+      "targets": [
+        ["css=.css-avlszb > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your shopping cart is currently empty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11f083a8-1b55-45ea-ba3f-28fa98df6f1c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.css-avlszb > span",
+      "targets": [
+        ["css=.css-avlszb > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your shopping cart is currently empty')]", "xpath:innerText"]
+      ],
+      "value": "Your shopping cart is currently empty"
+    }, {
+      "id": "4ffc60db-47f7-461b-ae1b-d0c050230a87",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "115f3b86-3c5b-4fcd-bf27-7266072394f8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.walmart.ca/en"],
+  "plugins": []
+}
