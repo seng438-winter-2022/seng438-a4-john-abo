@@ -1,0 +1,289 @@
+{
+  "id": "f7c1c70d-c1a7-4e88-80f9-560af27d04b6",
+  "version": "2.0",
+  "name": "Walmart Tests ",
+  "url": "https://www.walmart.ca/en",
+  "tests": [{
+    "id": "d95b633b-42d8-49ec-b4c2-1ffb0cb0a664",
+    "name": "Buy apple",
+    "commands": [{
+      "id": "afa267ec-f379-427b-912a-5358f8363b36",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6c9f19d-d26b-4cd1-a06d-d5c93be1e6a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "917x862",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b73ec19-c7d1-4dc3-b107-dd78cc183dfa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-lnbrg4 > .css-1f9gjts",
+      "targets": [
+        ["css=.css-lnbrg4 > .css-1f9gjts", "css:finder"],
+        ["xpath=//div[2]/div/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d9e442-58bd-44eb-ae5e-aa8279b65de6",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-form-input",
+      "targets": [
+        ["id=search-form-input", "id"],
+        ["css=#search-form-input", "css:finder"],
+        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f8d0c0a-a462-4964-87eb-cc2456d6dd28",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-form-input",
+      "targets": [
+        ["id=search-form-input", "id"],
+        ["css=#search-form-input", "css:finder"],
+        ["xpath=//input[@id='search-form-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "apples"
+    }, {
+      "id": "d464cc56-07af-410d-a59e-5b977d868335",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1lxthnz",
+      "targets": [
+        ["css=.css-1lxthnz", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1373e3d9-b0d2-4afe-815d-cf37162a7bf9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=div:nth-child(1) > .css-1fnwt3w .css-1p4va6y",
+      "targets": [
+        ["css=div:nth-child(1) > .css-1fnwt3w .css-1p4va6y", "css:finder"],
+        ["xpath=//div[@id='product-results']/div/div/a/div/div[2]/div[2]/span/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Apple, Gala')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c93311-33b9-4377-93fd-56c0a8436572",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .css-1fnwt3w .css-1p4va6y",
+      "targets": [
+        ["css=div:nth-child(1) > .css-1fnwt3w .css-1p4va6y", "css:finder"],
+        ["xpath=//div[@id='product-results']/div/div/a/div/div[2]/div[2]/span/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Apple, Gala')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be3b9d8a-392d-403b-aa07-fddf4054aa53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6671f56-91c1-48da-be60-42546bed062d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea4b708a-8126-4301-89c3-170c9f2691ae",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.css-dldxm2",
+      "targets": [
+        ["css=.css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='add-to-cart-button-wrapper']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ced15ff0-1ad2-420a-8973-e56c38833358",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-2ze04u",
+      "targets": [
+        ["css=.css-2ze04u", "css:finder"],
+        ["xpath=//div[@id='atc-root']/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue Shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d6c7307-3ca3-4d6c-bfde-98246ed98e18",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(4) > .css-dldxm2",
+      "targets": [
+        ["css=div:nth-child(4) > .css-dldxm2", "css:finder"],
+        ["xpath=//div[@id='atc-root']/div[3]/div[2]/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f66fcc26-98cf-4d47-b73a-d0e991e461a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.eeazboz0:nth-child(7) > div:nth-child(2)",
+      "targets": [
+        ["css=.eeazboz0:nth-child(7) > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[7]/div[2]", "xpath:position"]
+      ],
+      "value": "$0.39"
+    }]
+  }, {
+    "id": "b25e1e5c-51ce-429c-8585-a2927bf3863c",
+    "name": "Find location",
+    "commands": [{
+      "id": "5bdb4b88-db5b-4cb2-bba5-079595f5f95d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c60b0bd-9c33-4ec0-8378-8c34855d81f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "917x862",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f14eda28-9eb7-4de6-a363-6fdc04ea44d6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-lnbrg4 > .css-1f9gjts",
+      "targets": [
+        ["css=.css-lnbrg4 > .css-1f9gjts", "css:finder"],
+        ["xpath=//div[2]/div/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad39a4d-1f72-4758-b514-3772dce8e5e2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=sparklogo_Layer_2",
+      "targets": [
+        ["id=sparklogo_Layer_2", "id"],
+        ["css=#sparklogo_Layer_2", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d45c306f-32a6-403d-ae76-1fc7d5f22417",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mobile-hamburger-button > svg",
+      "targets": [
+        ["css=#mobile-hamburger-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fbbc3fd-3e7f-4ee6-a193-1a052655720e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#header\\.hamburger\\.storeFinder\\.title div:nth-child(2)",
+      "targets": [
+        ["css=#header\\.hamburger\\.storeFinder\\.title div:nth-child(2)", "css:finder"],
+        ["xpath=//a[@id='header.hamburger.storeFinder.title']/li/span/div[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/a/li/span/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e90320b8-58f5-41fb-aea2-d7b7a9a425c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfa-search__input",
+      "targets": [
+        ["css=.sfa-search__input", "css:finder"],
+        ["xpath=//input[@value='L5V2N6']", "xpath:attributes"],
+        ["xpath=//div[@id='skipto-main-wrap']/div/div[3]/div/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16dd3316-66d4-41a7-80ae-78921a07e728",
+      "comment": "",
+      "command": "type",
+      "target": "css=.sfa-search__input",
+      "targets": [
+        ["css=.sfa-search__input", "css:finder"],
+        ["xpath=//input[@value='T2L 2K1']", "xpath:attributes"],
+        ["xpath=//div[@id='skipto-main-wrap']/div/div[3]/div/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "T2L 2K1"
+    }, {
+      "id": "82bda09a-2692-494d-b774-201c65d2585f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfa-wm-btn",
+      "targets": [
+        ["css=.sfa-wm-btn", "css:finder"],
+        ["xpath=//div[@id='skipto-main-wrap']/div/div[3]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "768da064-b537-48af-9d79-69c6e472c968",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sfa-store-list-item-3011 .sfa-store-list-item__name",
+      "targets": [
+        ["css=#sfa-store-list-item-3011 .sfa-store-list-item__name", "css:finder"],
+        ["xpath=//div[@id='sfa-store-list-item-3011']/div[2]/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Northland Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bf2c6fa-c3ac-4ab5-930e-97594752c0a0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info-content > div",
+      "targets": [
+        ["css=.info-content > div", "css:finder"],
+        ["xpath=//div[@id='skipto-main-wrap']/div/div[4]/div[4]/div/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "5005 Northland Dr N W, Calgary, AB"
+    }]
+  }],
+  "suites": [{
+    "id": "3e531c66-795a-414d-beba-facac9bd4ab5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.walmart.ca/en", "https://www.walmart.ca/en/ip/apple-gala/6000195494284", "https://www.walmart.ca/store-selector?returnToReferrer=true"],
+  "plugins": []
+}
