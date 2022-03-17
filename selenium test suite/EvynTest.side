@@ -352,6 +352,89 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "916da4d5-1200-44c2-9e23-fa445835f01f",
+    "name": "removing item from empty cart",
+    "commands": [{
+      "id": "b96e1540-d12a-459d-b9c8-8a39668d40a1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.walmart.ca/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "936b7f79-3a31-4b9c-bcf0-6f7cce2f5231",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1022x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b326bcf-0320-4e47-8f31-03cd465668b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-nk32ej use",
+      "targets": [
+        ["css=.css-nk32ej use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d2cca8f-92d9-4d45-80d7-3ae4a9a0165b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-nk32ej use",
+      "targets": [
+        ["css=.css-nk32ej use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6284a631-09d1-4624-998a-cec02a9a3222",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.css-kx500q:nth-child(2)",
+      "targets": [
+        ["css=.css-kx500q:nth-child(2)", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01b90134-1007-4dd2-a708-8b0f6f449a02",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,8)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c354728-c128-430f-b269-eb7347ddacdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-avlszb > span",
+      "targets": [
+        ["css=.css-avlszb > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your shopping cart is currently empty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11f083a8-1b55-45ea-ba3f-28fa98df6f1c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.css-avlszb > span",
+      "targets": [
+        ["css=.css-avlszb > span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Your shopping cart is currently empty')]", "xpath:innerText"]
+      ],
+      "value": "Your shopping cart is currently empty"
+    }, {
+      "id": "4ffc60db-47f7-461b-ae1b-d0c050230a87",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "115f3b86-3c5b-4fcd-bf27-7266072394f8",
