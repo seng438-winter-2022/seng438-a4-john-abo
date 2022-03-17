@@ -11,7 +11,7 @@
 |          Andres Caicedo      |   |
 
 # Introduction
-
+The purpose of this lab is to try, learn and practise techniques in mutation testing as well as GUI testing. Mutation testing helps our test suites increase in reliability. Mutation testing was done by using Piteclipse on Eclipse. The purpose for our mutation testing is to increase our mutation score by taking care of the mutants which were not killed and by adding additional test cases. GUI testing was done by using Selenium to record events from a website which were automated using Selenium API. The results of the GUI testing were also compared to Sikulli automation as well. 
 
 # Analysis of 10 Mutants of the Range class 
 
